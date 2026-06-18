@@ -45,22 +45,23 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-full flex items-center gap-3">
-        <div
-          className={`flex items-center gap-2 transition-opacity duration-300 ${
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className={`transition-opacity duration-300 ${
             scrolled ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src="/zahoor_orchards/images/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full object-cover" />
-          <span className="font-display text-base font-bold text-white">Zahoor Orchards</span>
-        </div>
+          <img src="/zahoor_orchards/images/logo.jpg" alt="Home" className="w-8 h-8 rounded-full object-cover" />
+        </button>
 
         <div className="ml-auto hidden md:flex items-center gap-1">
-          {sectionLabels.map((label, i) => {
-            const isActive = activeIndex === i;
+          {sectionLabels.slice(1).map((label, i) => {
+            const idx = i + 1;
+            const isActive = activeIndex === idx;
             return (
               <button
                 key={label}
-                onClick={() => scrollTo(i)}
+                onClick={() => scrollTo(idx)}
                 className={`px-3 py-2 text-sm transition-colors border-b-2 ${
                   isActive
                     ? "border-gold text-gold font-semibold"
@@ -89,17 +90,20 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="bg-surface-dark border-t border-white/10 md:hidden"
         >
-          {sectionLabels.map((label, i) => (
-            <button
-              key={label}
-              onClick={() => scrollTo(i)}
-              className={`block w-full text-left px-6 py-3 text-sm ${
-                activeIndex === i ? "text-gold bg-white/5" : "text-text-secondary"
-              }`}
-            >
-              {label}
-            </button>
-          ))}
+          {sectionLabels.slice(1).map((label, i) => {
+            const idx = i + 1;
+            return (
+              <button
+                key={label}
+                onClick={() => scrollTo(idx)}
+                className={`block w-full text-left px-6 py-3 text-sm ${
+                  activeIndex === idx ? "text-gold bg-white/5" : "text-text-secondary"
+                }`}
+              >
+                {label}
+              </button>
+            );
+          })}
         </motion.div>
       )}
     </nav>
