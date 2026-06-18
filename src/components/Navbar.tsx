@@ -15,8 +15,8 @@ export default function Navbar() {
       const offset = window.scrollY;
       setScrolled(offset > 60);
 
-      const hero = document.getElementById('home');
-      setShowLogo(hero ? hero.getBoundingClientRect().bottom <= 0 : false);
+      const about = document.getElementById('about');
+      setShowLogo(about ? about.getBoundingClientRect().top <= 80 : false);
 
       const sections = sectionLabels.map((label) =>
         document.getElementById(label.toLowerCase().replace(/\s+/g, "-"))

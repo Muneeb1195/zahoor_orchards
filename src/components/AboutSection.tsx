@@ -45,7 +45,7 @@ export default function AboutSection() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gradient-to-br from-gold to-gold-dark hover:from-gold-dark hover:to-gold/80 rounded-lg p-6 md:p-8 text-center text-black shadow-lg transition-all duration-300"
+                  className="bg-gradient-to-br from-gold to-gold-dark hover:from-gold-dark hover:to-gold/80 rounded-lg p-6 md:p-8 text-center text-black shadow-lg transition-all duration-300 flex flex-col items-center justify-center"
                 >
                   <div className="text-2xl md:text-4xl font-bold mb-3">
                     {stat.value}
