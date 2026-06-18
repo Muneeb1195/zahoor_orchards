@@ -80,7 +80,15 @@ export default function PaymentSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-8 w-full bg-gold text-black font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-gold/90 active:scale-95 transition-all duration-200"
+          onClick={() => {
+            const link = document.createElement('a')
+            link.href = '/zahoor_orchards/images/payment_plan.jpg'
+            link.download = 'Zahoor_Orchards_Payment_Plan.jpg'
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link)
+          }}
+          className="mt-8 w-full bg-gold text-black font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-gold/90 active:scale-95 transition-all duration-200 cursor-pointer"
         >
           <Download className="w-5 h-5" />
           Download Payment Plans

@@ -45,9 +45,6 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-full flex items-center gap-3">
-        <img src="/zahoor_orchards/images/logo.jpg" alt="Logo" className="w-9 h-9 rounded-full object-cover" />
-        <span className="font-display text-lg font-bold text-white">Zahoor Orchards</span>
-
         <div className="ml-auto hidden md:flex items-center gap-1">
           {sectionLabels.map((label, i) => {
             const isActive = activeIndex === i;
