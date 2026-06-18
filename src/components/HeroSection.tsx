@@ -27,11 +27,11 @@ export default function HeroSection() {
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
 
-      <div className="absolute inset-0 z-10 flex flex-col items-start justify-center px-6 md:pl-16 lg:pl-24">
+      <div className="absolute inset-0 z-10 flex flex-col items-start justify-center px-[5%]">
         <div className="flex flex-col items-start justify-center">
           <motion.div
             style={{ scale: logoScale, opacity: logoOpacity }}
-            className="mb-6 md:mb-8 w-[28vw] h-[28vw] md:w-[20vw] md:h-[20vw] lg:w-[16vw] lg:h-[16vw] rounded-full overflow-hidden border-4 border-gold flex-shrink-0 origin-top-left"
+            className="mb-[3%] w-[11%] h-[11%] min-w-[55px] min-h-[55px] max-w-[180px] max-h-[180px] rounded-full overflow-hidden border-4 border-gold flex-shrink-0 origin-top-left"
           >
             <img
               src="/zahoor_orchards/images/logo.jpg"
@@ -42,14 +42,14 @@ export default function HeroSection() {
 
           <motion.h1
             style={{ scale: nameScale, opacity: nameOpacity }}
-            className="font-display text-2xl md:text-3xl lg:text-4xl text-white text-left mb-3 md:mb-4 font-bold origin-top-left"
+            className="font-display text-[clamp(1.25rem,2.5vw,2.5rem)] text-white text-left mb-[1.5%] font-bold origin-top-left"
           >
             {societyData.name}
           </motion.h1>
 
           <motion.p
             style={{ opacity: taglineOpacity }}
-            className="text-text-secondary text-sm md:text-base text-left"
+            className="text-text-secondary text-[clamp(0.75rem,1.2vw,1rem)] text-left"
           >
             {societyData.tagline}
           </motion.p>
