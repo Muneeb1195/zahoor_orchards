@@ -6,6 +6,7 @@ import { sectionLabels } from "@/data/society";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [showLogo, setShowLogo] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -13,6 +14,9 @@ export default function Navbar() {
     const onScroll = () => {
       const offset = window.scrollY;
       setScrolled(offset > 60);
+
+      const hero = document.getElementById('home');
+      setShowLogo(hero ? hero.getBoundingClientRect().bottom <= 0 : false);
 
       const sections = sectionLabels.map((label) =>
         document.getElementById(label.toLowerCase().replace(/\s+/g, "-"))
@@ -48,7 +52,7 @@ export default function Navbar() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className={`transition-opacity duration-300 ${
-            scrolled ? "opacity-100" : "opacity-0"
+            showLogo ? "opacity-100" : "opacity-0"
           }`}
         >
           <img src="/zahoor_orchards/images/logo.jpg" alt="Home" className="w-8 h-8 rounded-full object-cover" />

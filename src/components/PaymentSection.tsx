@@ -74,6 +74,22 @@ export default function PaymentSection() {
           </div>
         </motion.div>
 
+        {/* Remaining Balance Note */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mt-4 border border-gold/40 bg-card-bg rounded-xl p-4 flex items-start gap-3"
+        >
+          <Info className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+          <div>
+            <p className="text-sm text-white/90">
+              <span className="font-semibold text-gold">Important Note:</span> Remaining balance will be cleared at the end of the payment plan duration.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Download Button */}
         <motion.button
           initial={{ opacity: 0, y: 20 }}

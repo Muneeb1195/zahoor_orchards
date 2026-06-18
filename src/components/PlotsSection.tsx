@@ -40,7 +40,7 @@ export default function PlotsSection() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="bg-card-bg rounded-full px-6 py-3 text-sm font-semibold text-yellow-500 border border-yellow-500/20">
+            <div className="bg-card-bg rounded-full px-6 py-3 text-sm font-semibold text-gold border border-gold/20">
             Available Plots: {availablePlots.length}
           </div>
           <div className="bg-card-bg rounded-full px-6 py-3 text-sm font-semibold text-gray-400 border border-gray-500/20">
@@ -57,7 +57,7 @@ export default function PlotsSection() {
         >
           <table className="w-full">
             <thead>
-              <tr className="bg-yellow-500 text-black">
+              <tr className="bg-gold text-black">
                 <th className="px-6 py-4 text-left font-semibold">Plot No.</th>
                 <th className="px-6 py-4 text-left font-semibold">Size</th>
                 <th className="px-6 py-4 text-left font-semibold">Price</th>
@@ -80,7 +80,7 @@ export default function PlotsSection() {
                     {plot.id}
                   </td>
                   <td className="px-6 py-4 text-gray-300">{plot.size}</td>
-                   <td className="px-6 py-4 text-yellow-500 font-semibold">
+                   <td className="px-6 py-4 text-gold font-semibold">
                     {plot.price}
                   </td>
                   <td className="px-6 py-4 text-gray-300">{plot.category}</td>
@@ -117,7 +117,7 @@ export default function PlotsSection() {
               transition={{ duration: 0.4, delay: index * 0.05 }}
             >
               {/* Plot Number as Title */}
-              <h3 className="text-lg font-bold text-yellow-500 mb-4">
+               <h3 className="text-lg font-bold text-gold mb-4">
                 {plot.id}
               </h3>
 
@@ -129,7 +129,7 @@ export default function PlotsSection() {
                 </div>
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-400">Price</span>
-                  <span className="text-yellow-500 font-semibold">
+                  <span className="text-gold font-semibold">
                     {plot.price}
                   </span>
                 </div>

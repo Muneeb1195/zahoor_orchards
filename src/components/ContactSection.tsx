@@ -56,7 +56,7 @@ export default function ContactSection() {
                 <h3 className="text-white font-semibold text-lg mb-3">Phone</h3>
                 <a
                   href={`tel:${societyData.phone}`}
-                  className="text-gold hover:text-yellow-400 transition duration-300 text-lg font-medium"
+                  className="text-gold hover:text-gold-dark transition duration-300 text-lg font-medium"
                 >
                   {societyData.phone}
                 </a>
@@ -67,7 +67,7 @@ export default function ContactSection() {
                 <h3 className="text-white font-semibold text-lg mb-3">Email</h3>
                 <a
                   href={`mailto:${societyData.email}`}
-                  className="text-gold hover:text-yellow-400 transition duration-300 text-lg font-medium"
+                  className="text-gold hover:text-gold-dark transition duration-300 text-lg font-medium"
                 >
                   {societyData.email}
                 </a>
@@ -83,7 +83,7 @@ export default function ContactSection() {
                   href={societyData.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gold hover:text-yellow-400 transition duration-300 text-sm font-medium"
+                  className="text-gold hover:text-gold-dark transition duration-300 text-sm font-medium"
                 >
                   View on Map →
                 </a>
@@ -196,7 +196,7 @@ export default function ContactSection() {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-gold text-black font-semibold py-3 rounded-lg hover:bg-yellow-500 transition duration-300 mt-6"
+                  className="w-full bg-gold text-black font-semibold py-3 rounded-lg hover:bg-gold-dark transition duration-300 mt-6"
                 >
                   Send Inquiry
                 </button>

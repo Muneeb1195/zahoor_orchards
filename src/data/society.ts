@@ -55,17 +55,17 @@ With wide roads, modern sewerage, and 24/7 security, we ensure a safe and comfor
   amenities: [
     {
       title: "Parks & Green Spaces",
-      description: "Beautifully landscaped parks and children's play areas.",
+      description: "Beautifully landscaped parks, children's play areas and open gym.",
       icon: "park",
     },
     {
       title: "24/7 Security",
-      description: "CCTV surveillance and trained security personnel round the clock.",
+      description: "Trained security personnel round the clock.",
       icon: "security",
     },
     {
       title: "Wide Roads",
-      description: "40-60 ft wide carpeted roads with street lights.",
+      description: "30-60 ft wide carpeted roads with street lights.",
       icon: "road",
     },
     {
@@ -74,7 +74,7 @@ With wide roads, modern sewerage, and 24/7 security, we ensure a safe and comfor
       icon: "plumbing",
     },
     {
-      title: "Jama Masjid",
+      title: "Jamia Masjid",
       description: "A spacious mosque within walking distance.",
       icon: "mosque",
     },

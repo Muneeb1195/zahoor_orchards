@@ -5,8 +5,8 @@ import { societyData } from '@/data/society'
 import SectionHeader from '@/components/SectionHeader'
 
 const stats = [
-  { label: '100+ Plots', value: '100+' },
-  { label: '50+ Families', value: '50+' },
+  { label: '500+ Plots', value: '500+' },
+  { label: '20+ Families', value: '20+' },
   { label: '6 Amenities', value: '6' },
   { label: '24/7 Security', value: '24/7' }
 ]
@@ -45,7 +45,7 @@ export default function AboutSection() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gradient-to-br from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 rounded-lg p-6 md:p-8 text-center text-white shadow-lg transition-all duration-300"
+                  className="bg-gradient-to-br from-gold to-gold-dark hover:from-gold-dark hover:to-gold/80 rounded-lg p-6 md:p-8 text-center text-black shadow-lg transition-all duration-300"
                 >
                   <div className="text-2xl md:text-4xl font-bold mb-3">
                     {stat.value}
