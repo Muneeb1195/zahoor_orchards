@@ -31,7 +31,7 @@ export default function HeroSection() {
         <div className="flex flex-col items-start justify-center">
           <motion.div
             style={{ scale: logoScale, opacity: logoOpacity }}
-            className="mb-[3%] w-[11%] h-[11%] min-w-[55px] min-h-[55px] rounded-full overflow-hidden border-4 border-gold flex-shrink-0 origin-top-left"
+            className="mb-[3%] w-[22vw] h-[22vw] min-w-[60px] min-h-[60px] max-w-[350px] max-h-[350px] rounded-full overflow-hidden border-4 border-gold flex-shrink-0 origin-top-left"
           >
             <img
               src="/zahoor_orchards/images/logo.jpg"
