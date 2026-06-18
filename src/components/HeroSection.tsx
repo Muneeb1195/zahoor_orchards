@@ -18,16 +18,16 @@ export default function HeroSection() {
   const taglineOpacity = useTransform(scrollYProgress, [0, 0.35, 0.5], [1, 0.3, 0])
 
   return (
-    <section ref={sectionRef} className="relative w-full aspect-[4/3] sm:aspect-[16/7] md:aspect-[21/8] overflow-hidden">
+    <section ref={sectionRef} className="relative w-full overflow-hidden">
       <img
         src="/zahoor_orchards/images/banner.jpg"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover"
+        className="w-full h-auto block"
       />
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
 
-      <div className="relative z-10 h-full flex flex-col items-start justify-center px-6 md:pl-16 lg:pl-24">
+      <div className="absolute inset-0 z-10 flex flex-col items-start justify-center px-6 md:pl-16 lg:pl-24">
         <div className="flex flex-col items-start justify-center">
           <motion.div
             style={{ scale: logoScale, opacity: logoOpacity }}

@@ -55,7 +55,7 @@ export default function Navbar() {
             showLogo ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src="/zahoor_orchards/images/logo.jpg" alt="Home" className="w-8 h-8 rounded-full object-cover" />
+          <img src="/zahoor_orchards/images/logo.jpg" alt="Home" className="w-8 h-8 rounded-full object-cover border-2 border-gold" />
         </button>
 
         <div className="ml-auto hidden md:flex items-center gap-1">

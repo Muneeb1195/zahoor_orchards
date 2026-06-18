@@ -107,7 +107,7 @@ export default function PaymentSection() {
           className="mt-8 w-full bg-gold text-black font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-gold/90 active:scale-95 transition-all duration-200 cursor-pointer"
         >
           <Download className="w-5 h-5" />
-          Download Payment Plans
+          Download Payment Plan
         </motion.button>
       </div>
     </section>
